@@ -1,0 +1,159 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "testclients/mysql_client_test"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_EXECUTABLE",
+			"TARGET_LINK_LIBRARIES",
+			"ADD_DEFINITIONS",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"testclients/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 455,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -Wextra -Wformat-security -Wvla -Wwrite-strings -Wdeclaration-after-statement -Wno-unused-parameter -g -fno-omit-frame-pointer -fno-strict-aliasing -DENABLED_DEBUG_SYNC -DSAFE_MUTEX -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "MYSQL_CLIENT"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/Users/cheese/Src/CSrc/mysql-connector-c-6.1.11-src/cmake-build-debug/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/cheese/Src/CSrc/mysql-connector-c-6.1.11-src/extra/rapidjson/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/cheese/Src/CSrc/mysql-connector-c-6.1.11-src/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "mysqlclient::@804198ce8b9bd67f3a0d"
+		}
+	],
+	"id" : "mysql_client_test::@d8f2b1a4fb51917adc75",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wall -Wextra -Wformat-security -Wvla -Woverloaded-virtual -Wno-unused-parameter -Wno-null-conversion -Wno-unused-private-field -g -fno-omit-frame-pointer -fno-strict-aliasing -DENABLED_DEBUG_SYNC -DSAFE_MUTEX",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libmysql/libmysqlclient.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "mysql_client_test",
+	"nameOnDisk" : "mysql_client_test",
+	"paths" : 
+	{
+		"build" : "testclients",
+		"source" : "testclients"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "testclients/mysql_client_test.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

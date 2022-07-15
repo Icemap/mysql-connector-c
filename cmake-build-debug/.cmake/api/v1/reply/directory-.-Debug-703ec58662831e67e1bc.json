@@ -1,0 +1,137 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"INSTALL"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 566,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 571,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 573,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 580,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 586,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 592,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Readme",
+			"destination" : ".",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"COPYING",
+				"LICENSE.mysql"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Readme",
+			"destination" : ".",
+			"paths" : 
+			[
+				"README"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Documentation",
+			"destination" : "docs",
+			"paths" : 
+			[
+				"cmake-build-debug/Docs/INFO_SRC",
+				"cmake-build-debug/Docs/INFO_BIN"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "DebugReadme",
+			"destination" : ".",
+			"isOptional" : true,
+			"paths" : 
+			[
+				{
+					"from" : "LICENSE.mysql",
+					"to" : "LICENSE.mysql-debug"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "DebugReadme",
+			"destination" : ".",
+			"isOptional" : true,
+			"paths" : 
+			[
+				{
+					"from" : "COPYING",
+					"to" : "COPYING-debug"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "DebugReadme",
+			"destination" : ".",
+			"paths" : 
+			[
+				{
+					"from" : "README",
+					"to" : "README-debug"
+				}
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

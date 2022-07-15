@@ -1,0 +1,105 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"INSTALL",
+			"MYSQL_INSTALL_TARGETS",
+			"MERGE_LIBRARIES"
+		],
+		"files" : 
+		[
+			"cmake/install_macros.cmake",
+			"cmake/libutils.cmake",
+			"libmysql/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 247,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 274,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 241,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 285,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 274,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 241,
+				"parent" : 5
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "Development",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libmysql/libmysqlclient.a"
+			],
+			"targetId" : "mysqlclient::@804198ce8b9bd67f3a0d",
+			"targetIndex" : 13,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "SharedLibraries",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libmysql/libmysqlclient.18.dylib"
+			],
+			"targetId" : "libmysql::@804198ce8b9bd67f3a0d",
+			"targetIndex" : 9,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "SharedLibraries",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libmysql/libmysqlclient.dylib"
+			],
+			"targetId" : "libmysql::@804198ce8b9bd67f3a0d",
+			"targetIndex" : 9,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "libmysql",
+		"source" : "libmysql"
+	}
+}

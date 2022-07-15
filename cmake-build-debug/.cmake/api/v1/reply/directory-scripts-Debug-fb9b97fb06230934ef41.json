@@ -1,0 +1,51 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"INSTALL",
+			"INSTALL_SCRIPT"
+		],
+		"files" : 
+		[
+			"cmake/install_macros.cmake",
+			"scripts/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 142,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 112,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Development",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"cmake-build-debug/scripts/mysql_config"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "scripts",
+		"source" : "scripts"
+	}
+}

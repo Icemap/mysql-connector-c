@@ -1,0 +1,102 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"INSTALL"
+		],
+		"files" : 
+		[
+			"include/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 67,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 68,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Development",
+			"destination" : "include",
+			"paths" : 
+			[
+				"include/mysql.h",
+				"include/mysql_com.h",
+				"include/my_command.h",
+				"include/mysql_time.h",
+				"include/my_list.h",
+				"include/my_alloc.h",
+				"include/typelib.h",
+				"include/binary_log_types.h",
+				"include/my_dbug.h",
+				"include/m_string.h",
+				"include/my_sys.h",
+				"include/my_xml.h",
+				"include/mysql_embed.h",
+				"include/my_thread.h",
+				"include/my_thread_local.h",
+				"include/decimal.h",
+				"include/errmsg.h",
+				"include/my_global.h",
+				"include/my_getopt.h",
+				"include/sslopt-longopts.h",
+				"include/my_dir.h",
+				"include/sslopt-vars.h",
+				"include/sslopt-case.h",
+				"include/sql_common.h",
+				"include/keycache.h",
+				"include/m_ctype.h",
+				"include/my_compiler.h",
+				"include/mysql_com_server.h",
+				"include/my_byteorder.h",
+				"include/byte_order_generic.h",
+				"include/byte_order_generic_x86.h",
+				"include/little_endian.h",
+				"include/big_endian.h",
+				"include/thr_cond.h",
+				"include/thr_mutex.h",
+				"include/thr_rwlock.h",
+				"cmake-build-debug/include/mysql_version.h",
+				"cmake-build-debug/include/my_config.h",
+				"cmake-build-debug/include/mysqld_ername.h",
+				"cmake-build-debug/include/mysqld_error.h",
+				"cmake-build-debug/include/sql_state.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Development",
+			"destination" : "include/mysql",
+			"paths" : 
+			[
+				{
+					"from" : "include/mysql",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include",
+		"source" : "include"
+	}
+}
