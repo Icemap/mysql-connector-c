@@ -20847,7 +20847,8 @@ static void test_bug22559575()
 
 static struct my_tests_st my_tests[]= {
   { "disable_query_logs", disable_query_logs, 0, 0 },
-  { "test_view_sp_list_fields", test_view_sp_list_fields, 0, 0 },
+  // TiDB not support
+  // { "test_view_sp_list_fields", test_view_sp_list_fields, 0, 0 },
   { "client_query", client_query, 0, 0 },
   { "test_prepare_insert_update", test_prepare_insert_update, 0, 0},
 #if NOT_YET_WORKING

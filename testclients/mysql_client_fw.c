@@ -307,7 +307,7 @@ static my_bool check_have_innodb(MYSQL *conn)
 
  rc= mysql_query(conn,
  "SELECT (support = 'YES' or support = 'DEFAULT' or support = 'ENABLED') "
- "AS `TRUE` FROM information_schema.engines WHERE engine = 'innodb'");
+ "AS `TRUE` FROM information_schema.engines WHERE engine = 'InnoDB'");
  myquery(rc);
  res= mysql_use_result(conn);
  DIE_UNLESS(res);
