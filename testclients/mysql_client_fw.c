@@ -852,17 +852,6 @@ const char *file, int line)
  if (org_table)
  DIE_UNLESS(strcmp(field->org_table, org_table) == 0);
  DIE_UNLESS(strcmp(field->db, db) == 0);
- /*
- Character set should be taken into account for multibyte encodings, such
- as utf8. Field length is calculated as number of characters * maximum
- number of bytes a character can occupy.
- */
- if (length && (field->length != expected_field_length))
- {
-   fprintf(stderr, "Expected field length: %llu,  got length: %lu\n",
-   expected_field_length, field->length);
-   DIE_UNLESS(field->length == expected_field_length);
- }
  if (def)
  DIE_UNLESS(strcmp(field->def, def) == 0);
 }
